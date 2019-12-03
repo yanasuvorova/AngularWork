@@ -1,6 +1,3 @@
 <div>
-    <h2>Добро пожаловать {{name}}</h2>
-    <h3>Это второй компонент</h3>
-    <p>Имя пользоввателя -- {{userName}}</p>>
-    <p>Возраст пользователя -- {{userAge}}</p>
-</div>>
+   <input type="text" [ngModel]="userName" (ngModelChange)="onNameChange($event)">
+</div>

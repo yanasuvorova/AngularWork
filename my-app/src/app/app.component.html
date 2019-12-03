@@ -1,7 +1,4 @@
 <div>
-    <h2>Добро пожаловать {{name}}!</h2>
-    
-    <input type="text" [(ngModel)]="name" placeholder="name"><br>
-    <input type="number" [(ngModel)]="age" placeholder="age">
-    <app-child [userName]="name" [userAge]="age"></app-child>
+    <app-child [(userName)]="name"></app-child>
+    <h4>Вы ввели имя -- {{name}}</h4>
 </div>

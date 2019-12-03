@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-  name: string ="Tom";
-  age: number = 23;
+ clicks: number = 0;
+ onChanged(increased) {
+   increased ? this.clicks++ : this.clicks --;
+ }
 }
