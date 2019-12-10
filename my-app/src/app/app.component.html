@@ -9,6 +9,12 @@
         <a routerLink="/about"
         routerLinkActive="active">О сайте</a>
         </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['item','5']">Item 5</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['item','8']">Item 8</a>
+        </li>
         </ul>
     <router-outlet></router-outlet>
 </div>
