@@ -1,2 +1,0 @@
-# AngularWork
-Angular project
