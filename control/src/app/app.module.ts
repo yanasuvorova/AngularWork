@@ -1,28 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home.component';
-import { NotFoundComponent } from './found.component';
-import { AboutComponent } from './about.component';
-import { ItemComponent } from './item.component';
-import { ItemDetailsComponent } from './item.details.component';
-import { ItemStatComponent } from './item.stat.component';
+import { MainComponent } from './main/main.component';
+import { LoginComponent } from './login/login.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    MainComponent,
     NotFoundComponent,
-    AboutComponent,
-    ItemComponent,
-    ItemDetailsComponent,
-    ItemStatComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
